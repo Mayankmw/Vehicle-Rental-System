@@ -1,0 +1,98 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Car Rental System</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+
+</head>
+<body>
+    
+    <%
+    if (request.getParameter("m1") != null) {%>
+    <script>alert('Registration Failed..!');</script>
+    <%}%>
+    
+    <div id="logo" class="container">
+    <center><h1><font color="red"><i>Car Rental System </i></font></h1></center>
+
+    </div>
+    <div id="menu" class="container">
+    <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="admin.jsp">Admin</a></li>
+    <li><a href="customer.jsp">Customer</a></li>
+    <li class="current_page_item"><a href="register.jsp">Registration</a></li>
+    </ul>
+    </div>
+    <div id="banner" class="container"> <img src="images/pic01.jpg" width="1200" height="400" alt="" /></div>
+    <div id="three-column" class="container">
+
+    <p align="justify">
+    <center><p><font color="red" size="5">Customer Registration</font></p>
+    <form name="myform" action="registeract.jsp" method="post" id="" >
+    <table width="371">
+    <tr>
+    <td height="43"><font color="black">Customer Name </td>
+    <td width="218"><input name="cname" autocomplete="off" required="" placeholder="Customer Name" /></td>
+    </tr>
+    <tr>
+    <td height="43"><font color="black">User Name </td>
+    <td width="218"><input name="username" autocomplete="off" required="" placeholder="User Name" /></td>
+    </tr>
+    <tr>
+    <td height="43"><font color="black">Password </td>
+    <td width="218"><input type="password" autocomplete="off" name="password" required="" placeholder="Password" /></td>
+    </tr>
+    <tr>
+    <td height="43"><font color="black"> Email ID</td>
+    <td><input name="email" type="email" autocomplete="off" required="" placeholder="Email ID"/></td>
+    </tr>
+    <tr>
+    <td height="43"><font color="black">Date Of Birth</td>
+    <td><input type="date" data-date-inline-picker="true" name="dob" style="text-align:right" required="" ></td></label>
+    </td>
+    </tr>
+    <tr>
+    <td height="43"><font color="black">Select Gender</td>
+    <td><select name="gender" style="width:170px;" required="">
+    <option>--Select--</option>
+    <option>MALE</option>
+    <option>FEMALE</option>
+    </select></td>
+    </tr>
+    <tr>
+    <td height="65"><font color="black">Address</td>
+    <td><input name="location" autocomplete="off" required="" placeholder="Location"></input></td>
+    </tr>
+    <tr>
+    <td height="43"><font color="black">Mobile Number </td>
+    <td><input name="mobile" type="tel" autocomplete="off" required="" placeholder="Mobile Number" pattern="[0-9]{10}" maxlength="10"/></td>
+    </tr>
+    <tr>
+    <td height="43" rowspan="3">
+    <p>&nbsp;</p></td>
+    <td align="left" valign="middle"> <p>&nbsp;
+    </p>
+    <p>
+    <input name="submit" type="submit" value="REGISTER" />
+    </p>
+    <div align="right">
+    </div></td>
+    </tr>
+    </table>
+    </form>
+    </center>
+    </p>
+
+    </div>
+ <div id="copyright" class="container">
+    <p> Developed by: <a href="https://skitm.in/"><font color="red">SKITM 3rd YR STUDENTS[GRP 7]</a> </font></p>
+    </div>
+  
+</body>
+</html>
